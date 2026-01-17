@@ -1,9 +1,9 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Todo App</title>
+    <title>Document</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -11,18 +11,91 @@
       href="https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&family=Dancing+Script:wght@400..700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <div class="container">
-      <div>
+      <div class="btn_container">
+        <button onclick="login()">Login</button>
+        <button onclick="sign()">Sign Up</button>
+        <button onclick="aboutUs()">About us</button>
+      </div>
+      <div class="todo_container">
         <h1>Todo Application</h1>
         <input type="text" id="addTask" />
         <button id="addBtn">Add Task</button>
         <ul></ul>
+      </div>
+      <div class="login displayClose">
+        <h2>Login<i onclick="close()" class="fa-solid fa-xmark"></i></h2>
+        <br />
+        <label for="username">Username</label>
+        <br />
+        <input type="text" placeholder="Enter your username" id="username" />
+        <br />
+        <label for="password">Password</label>
+        <br />
+        <input
+          type="password"
+          placeholder="Enter your password"
+          name="password"
+          id="password"
+        />
+        <br />
+        <button>Submit</button>
+      </div>
+      <div class="sign displayClose">
+        <h2>
+          Sign Up
+
+          <i onclick="close()" class="fa-solid fa-xmark"></i>
+        </h2>
+        <br />
+        <label for="usernamee">Username</label>
+        <br />
+        <input type="text" placeholder="Enter your username" id="usernamee" />
+        <br />
+        <label for="passwordd">Password</label>
+        <br />
+        <input
+          type="password"
+          placeholder="Enter your password"
+          name="password"
+          id="passwordd"
+        />
+        <br />
+        <label for="passworddd">Confirm Password</label>
+        <br />
+        <input
+          type="password"
+          placeholder="Enter your Confirm password"
+          name="password"
+          id="passworddd"
+        />
+        <br />
+        <button>Submit</button>
+      </div>
+      <div class="about displayClose">
+        <h2>
+          About us
+          <i onclick="close()" class="fa-solid fa-xmark"></i>
+        </h2>
+        <p>
+          We're building the smartest, simplest way to manage your tasks and
+          conquer your day. Todo App helps you capture ideas, set reminders, and
+          collaborate with others, so you can focus on what truly matters. Get
+          organized, stay productive, and achieve your goals, one task at a
+          time.
+        </p>
       </div>
     </div>
 
     <script src="app.js"></script>
   </body>
 </html>
-

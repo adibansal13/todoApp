@@ -14,9 +14,9 @@
 h1 {
   text-align: center;
 }
-.container div {
+.todo_container {
   border: 2px solid rgb(17, 245, 17);
-  padding: 1.5rem;
+  padding: 1rem;
   border-radius: 2rem;
   height: 70vh;
 }
@@ -38,15 +38,20 @@ h1 {
 }
 ul {
   overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   height: 75%;
 }
 ul > li {
   display: flex;
+  width: 85%;
+  align-items: center;
   justify-content: space-between;
-  padding: 1rem;
+  padding: 0.8rem;
   font-size: 1.2rem;
   border: 2px solid rgb(161, 250, 161);
-  margin-block: 1rem;
+  margin-block: 0.2rem;
   border-radius: 1rem;
 }
 
@@ -64,4 +69,121 @@ ul > li > button:hover {
 }
 #addBtn:hover {
   box-shadow: 0 0 10px green;
+}
+.fa-regular {
+  color: rgb(161, 250, 161);
+}
+
+.fa-solid {
+  color: rgb(17, 245, 17);
+}
+
+.btn_container button {
+  font-size: 1rem;
+  width: 6rem;
+  border: 2px solid rgb(17, 245, 17);
+  padding: 1rem 0.8rem;
+  background-color: white;
+  cursor: pointer;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+}
+.btn_container button:hover {
+  scale: 1.05;
+  transition: 0.5s;
+}
+
+.login {
+  position: absolute;
+  top: 8.8rem;
+  border: 2px solid rgb(17, 245, 17);
+  padding: 4rem 1.5rem 1.5rem 1.5rem;
+  border-radius: 2rem;
+  height: 70vh;
+  background-color: white;
+}
+
+.login input {
+  background-color: white;
+  border: 2px solid rgb(17, 245, 17);
+  width: 19rem;
+}
+
+.login h2 {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  padding: 1rem;
+  border-radius: 2rem 2rem 0 0;
+  top: 0;
+  background-color: rgba(17, 245, 17, 0.559);
+}
+
+.login button {
+  padding: 0.7rem 1.2rem;
+  border: 0;
+  background-color: rgba(17, 245, 17, 0.559);
+  border-radius: 1rem;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.displaay {
+  display: block;
+}
+.displayClose {
+  display: none;
+}
+
+.about,
+.sign {
+  position: absolute;
+  top: 8.8rem;
+  border: 2px solid rgb(17, 245, 17);
+  padding: 4rem 1.5rem 1.5rem 1.5rem;
+  border-radius: 2rem;
+  height: 70vh;
+  background-color: white;
+}
+.sign input {
+  background-color: white;
+  border: 2px solid rgb(17, 245, 17);
+  width: 19rem;
+}
+
+.sign h2,
+.about h2 {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  padding: 1rem;
+  border-radius: 2rem 2rem 0 0;
+  top: 0;
+  background-color: rgba(17, 245, 17, 0.559);
+}
+
+.login h2 i,
+.sign h2 i,
+.about h2 i {
+  margin-left: 12rem;
+  border: 0;
+  font-size: 1.5rem;
+  color: white;
+  cursor: pointer;
+}
+.sign button {
+  padding: 0.7rem 1.2rem;
+  border: 0;
+  background-color: rgba(17, 245, 17, 0.559);
+  border-radius: 1rem;
+  cursor: pointer;
+  font-size: 1rem;
+}
+.about {
+  width: 23rem;
+}
+
+.about p {
+  margin-top: 2rem;
+  font-size: 1.2rem;
 }
